@@ -1,5 +1,6 @@
-# skribbl_db
-a skribbl.io word database with a python front-end to support it
+# About
+This is a pile-of-shit python database front-end that was meant to fulfil a boring idea.
+You basically just add words as you play skribbl.io, hoping that at some point you'll have every word available.
 
 # Usage
 ```
@@ -9,6 +10,12 @@ main.py add <word>
 
 main.py remove <word>
 ```
-# About
-This is a pile-of-shit front end that was meant to fulfil a boring idea.
-You basically just add words as you play, hoping that at some point you'll have every word available.
+
+# Database File - Structure
+```
+CREATE TABLE words(
+  word TEXT PRIMARY KEY,
+  length INTEGER,
+  spaces INTEGER
+)
+```

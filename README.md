@@ -6,11 +6,11 @@ The "words" database that's included, already contains a set of words that I stu
 
 # Usage
 ```
-main.py search <length(including spaces)> [spaces=0] [characters...]
+skdb.py search <length(including spaces)> [spaces=0] [characters...]
 
-main.py add <word>
+skdb.py add <word>
 
-main.py remove <word>
+skdb.py remove <word>
 ```
 
 # Database File - Structure

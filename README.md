@@ -4,7 +4,7 @@ You basically just add words as you play skribbl.io, hoping that at some point y
 
 # Usage
 ```
-main.py search <length(including space)> [spaces=0] [characters...]
+main.py search <length(including spaces)> [spaces=0] [characters...]
 
 main.py add <word>
 

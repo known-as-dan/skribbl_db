@@ -10,4 +10,5 @@ main.py add <word>
 main.py remove <word>
 ```
 # About
-This is a pile-of-shit front end that was meant to fulfil a boring idea
+This is a pile-of-shit front end that was meant to fulfil a boring idea.
+You basically just add words as you play, hoping that at some point you'll have every word available.

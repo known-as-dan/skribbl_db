@@ -136,6 +136,7 @@ def main(args):
 		db.close()
 
 		if len(found_words) > 0:
+			found_words.sort()
 			print("Here's a list of matching words:")
 			for word in found_words:
 				print("	{}".format(word))

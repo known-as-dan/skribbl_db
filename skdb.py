@@ -55,6 +55,9 @@ def initDB():
 # adds a word to the "words" database. Will return "True" or "False" based
 # on whether or not it's successful(the word might already be in the database)
 def addWord(db, word):
+	# setting all word characters to lowercase characters
+	word = word.lower()
+	
 	# getting word stats
 	length = len(word)
 	spaces = countChars(word, " ")

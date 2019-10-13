@@ -32,6 +32,7 @@ def charsExist(text, characters):
 	
 	return char_found
 
+data_file_path = "docs/words.js"
 cached_words = {}
 modified = True
 def getWords():
@@ -39,7 +40,7 @@ def getWords():
 	global cached_words
 
 	if modified:
-		file_obj = open("words.js", "r")
+		file_obj = open(data_file_path, "r")
 		file_content = file_obj.read()
 
 		search_result = re.search("\\{.*\\}", file_content, flags=re.S)
@@ -55,7 +56,7 @@ def getWords():
 def setWords(words):
 	words_json = json.dumps(words, indent=4)
 
-	file_obj = open("words.js", "w")
+	file_obj = open(data_file_path, "w")
 	file_obj.write("var words = " + words_json)
 
 	global modified
